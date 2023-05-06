@@ -1,0 +1,40 @@
+.Container {
+    display: flex;
+    flex-direction: row;
+
+    .Content-left {
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 10px 0 0 10px;
+
+        .MainImg {
+            img {
+                width: 500px;
+                height: 500px;
+            }
+        }
+
+        .AlternativeImg {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+
+            img {
+                width: 150px;
+                height: 150px;
+            }
+
+            img.active {
+                border: 2px solid green;
+            }
+        }
+    }
+
+    .Content-right {
+        border: 2px solid red;
+        width: 50%;
+    }
+}
